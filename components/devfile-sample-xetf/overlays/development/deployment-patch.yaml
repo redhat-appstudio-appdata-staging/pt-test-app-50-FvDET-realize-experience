@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xetf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/lpardo-tenant/pt-test-app-50/devfile-sample-xetf@sha256:0be193fda3bbc00beda622ae26c3f1943585c9b47c660a6854de609428903cbf
+        name: my-nodejs
+        resources: {}
+status: {}
