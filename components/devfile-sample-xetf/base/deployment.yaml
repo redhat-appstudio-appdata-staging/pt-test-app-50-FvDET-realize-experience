@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: devfile-sample-xetf
     app.kubernetes.io/part-of: pt-test-app-50
   name: devfile-sample-xetf
-  namespace: lpardo-tenant
 spec:
   replicas: 1
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: nodejs-app
@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-xetf
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads-stage/lpardo-tenant/pt-test-app-50/devfile-sample-xetf@sha256:0be193fda3bbc00beda622ae26c3f1943585c9b47c660a6854de609428903cbf
         name: my-nodejs
         ports:
         - containerPort: 3001

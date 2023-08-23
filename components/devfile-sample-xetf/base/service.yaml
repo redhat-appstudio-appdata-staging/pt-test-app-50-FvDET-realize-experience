@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/name: devfile-sample-xetf
     app.kubernetes.io/part-of: pt-test-app-50
   name: devfile-sample-xetf
-  namespace: lpardo-tenant
 spec:
   ports:
   - port: 3001
