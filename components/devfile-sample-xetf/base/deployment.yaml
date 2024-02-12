@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: pt-test-app-50
   name: devfile-sample-xetf
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
